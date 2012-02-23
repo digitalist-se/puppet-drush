@@ -1,5 +1,5 @@
 class drush (
-  $tar = 'drush-7.x-4.4.tar.gz'
+  $tar = 'drush-7.x-4.5.tar.gz'
 ) {
   package { 'php5-cli':
     ensure => installed,

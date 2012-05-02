@@ -20,20 +20,6 @@ class drush (
     require => [Exec['drush download'], Package['php5-cli']],
   }
 
-  file { '/usr/share/drush':
-    ensure => directory,
-    owner => root,
-    group => root,
-    mode => 755,
-  }
-
-  file { '/usr/share/drush/commands':
-    ensure => directory,
-    owner => root,
-    group => root,
-    mode => 755,
-  }
-
   file { '/usr/local/bin/drush':
     ensure => '/opt/drush/drush',
   }
